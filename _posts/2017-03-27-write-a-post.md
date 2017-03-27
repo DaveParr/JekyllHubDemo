@@ -22,25 +22,25 @@ You _could_ use the Editor on GitHub.com, but that's a bit limited, lets do some
 
 Load up GitHub Desktop and find your repo.
 
-![Open in GitHub Desktop]({{ site.github.url }}/assets/setup-github-pages/2_open_in_desktop.PNG)
+![Open in GitHub Desktop]({{ site.github.url }}/assets/write-jekyll-post/2_open_in_desktop.PNG)
 
 ## Open in Atom
 
 Use the quick access `Atom` button in GitHub Desktop to open the repo in Atom text editor.
 
-![Open in Atom]({{ site.github.url }}/assets/setup-github-pages/3_open_in_atom.PNG)
+![Open in Atom]({{ site.github.url }}/assets/write-jekyll-post/3_open_in_atom.PNG)
 
 ## Make a new folder
 
 Use the right click to open the `New Folder` dialogue in Atom.
 
-![Make a new folder]({{ site.github.url }}/assets/setup-github-pages/4_new_folder.PNG)
+![Make a new folder]({{ site.github.url }}/assets/write-jekyll-post/4_new_folder.PNG)
 
 ## Name `_posts`
 
 Name the new folder `_posts`. __This is really important. If you don't you're going to have a bad time.__
 
-![Name _posts]({{ site.github.url }}/assets/setup-github-pages/5_name__posts.PNG)
+![Name _posts]({{ site.github.url }}/assets/write-jekyll-post/5_name__posts.PNG)
 
 Behind the scenes Jekyll is looking for this folder when the repo is hosted on the website. It will use the Markdown files in this folder to build the individual blog posts.
 
@@ -48,13 +48,13 @@ Behind the scenes Jekyll is looking for this folder when the repo is hosted on t
 
 Use the right click again to open the `New Folder` dialogue in Atom.
 
-![New file]({{ site.github.url }}/assets/setup-github-pages/6_new_file.PNG)
+![New file]({{ site.github.url }}/assets/write-jekyll-post/6_new_file.PNG)
 
 ## Name `2017-03-26-setup-github-pages` (or something similar)
 
 Name the new folder `2017-03-26-setup-github-pages` or something similar. __This is also really important. If you don't you're going to have a bad time.__
 
-![Name file]({{ site.github.url }}/assets/setup-github-pages/7_name_file.PNG)
+![Name file]({{ site.github.url }}/assets/write-jekyll-post/7_name_file.PNG)
 
 Behind the scenes Jekyll is looking for names with this structure when the repo is hosted on the website. It will use the structure of the file names to associate the date it was published with the file. The generic structure to use is `YYYY-MM-DD-my-post-title`.
 
@@ -62,7 +62,7 @@ Behind the scenes Jekyll is looking for names with this structure when the repo 
 
 Duplicate the following identically (or at least similarly) at the start of your file. __This is also also really important. If you don't you're going to have a bad time.__
 
-![Include YAML frontmatter]({{ site.github.url }}/assets/setup-github-pages/8_include_YAML_frontmatter.PNG)
+![Include YAML frontmatter]({{ site.github.url }}/assets/write-jekyll-post/8_include_YAML_frontmatter.PNG)
 
 Behind the scenes Jekyll is looking for this at the start of the files when the repo is hosted on the website. It will use this to associate metadata to the file. This is a minimal example, but they can be much more developed.
 
@@ -70,7 +70,7 @@ Behind the scenes Jekyll is looking for this at the start of the files when the 
 
 Markdown is a really convenient way to encode formatting into text files. It doesn't break the flow of the text file when it is being read raw, and is much easier to learn and type without errors than html. Liquid is a templating language which is used to provide logic and variables to a page which is rendered through Jekyll. You don't _need_ to use the nested structure here to locate files, I just find it helps.
 
-![Write some Markdown and Liquid objects]({{ site.github.url }}/assets/setup-github-pages/9_write_some_markdonw_and_liquid_objects.PNG)
+![Write some Markdown and Liquid objects]({{ site.github.url }}/assets/write-jekyll-post/9_write_some_markdonw_and_liquid_objects.PNG)
 
 ### Markdown
 In this example the `##` denotes a second level header in Markdown. You can learn more about Markdown from your README that GitHub filled out for you in the last post. Markdown is also used to include a picture in the document via `![New repo](path/to/file.pic)`, however we've also used a Liquid object in `{{}}`...
@@ -82,6 +82,6 @@ When the site is built Jekyll will replace this argument `site.github.url` with 
 
 Save your file and head back to GitHub Desktop. Commit your changes and then `sync` your changes back to the web hosted version.
 
-![Commit your changes]({{ site.github.url }}/assets/setup-github-pages/10_commit_changes.PNG)
+![Commit your changes]({{ site.github.url }}/assets/write-jekyll-post/10_commit_changes.PNG)
 
 In my example I've already made a few changes. I've also made a new branch called gh-pages to test out my changes before commiting to the main branch. You can change branch the site is built from in the settings page of the repo, however the branch has to be called either `master` or `gh-pages`.
