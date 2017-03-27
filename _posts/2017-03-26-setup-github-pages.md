@@ -3,7 +3,12 @@ layout: post
 title: Setup  GitHub Page
 ---
 
-This post will show you how to set up a  GitHub Page website.
+This post will show you how to set up a  GitHub Page website. You will need:
+
+* A computer
+* A web browser
+* An internet connection
+* A GitHub account
 
 ## Start new repo
 
