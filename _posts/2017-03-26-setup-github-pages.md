@@ -42,6 +42,12 @@ GitHub automagically rewrote that README file! It's now a quick reference for Ma
 
 ## Go to your new site!
 
-Wondering how to deploy your page now? Don't bother, githubs done it already! Go find your URL back in the settings tab of the repo.
+Wondering how to deploy your page now? Don't bother, GitHub has done it already! Go find your URL back in the settings tab of the repo.
 
 ![Commit changes to README]({{ site.github.url }}/assets/setup-github-pages/6_go_to_site.PNG)
+
+## Read your README
+
+Grats, you have a pretty new page! Use these nicely formatted links to learn about Markdown, Jekyll and your repo Settings tab.
+
+![Read your README]({{ site.github.url }}/assets/setup-github-pages/6_read_your_README.PNG)
