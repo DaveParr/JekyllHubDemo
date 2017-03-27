@@ -21,7 +21,7 @@ The next window will provide you with some options. Fill in the relevant fields 
 
 Navigate to the repo settings tab and scroll down until you find the GitHub Pages section. Click `Choose a theme`.
 
-![GitHub Page settings]({{ site.github.url }}/assets/setup-github-pages/3_settingsgithub_pages.PNG)
+![GitHub Page settings]({{ site.github.url }}/assets/setup-github-pages/3_settings_github_pages.PNG)
 
 ## Choose a theme
 
