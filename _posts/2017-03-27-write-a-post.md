@@ -70,7 +70,7 @@ Behind the scenes Jekyll is looking for this at the start of the files when the 
 
 Markdown is a really convenient way to encode formatting into text files. It doesn't break the flow of the text file when it is being read raw, and is much easier to learn and type without errors than html. Liquid is a templating language which is used to provide logic and variables to a page which is rendered through Jekyll. You don't _need_ to use the nested structure here to locate files, I just find it helps.
 
-![Write some Markdown and Liquid objects]({{ site.github.url }}/assets/write-jekyll-post/9_write_some_markdonw_and_liquid_objects.PNG)
+![Write some Markdown and Liquid objects]({{ site.github.url }}/assets/write-jekyll-post/9_write_some_markdown_and_liquid_objects.PNG)
 
 ### Markdown
 In this example the `##` denotes a second level header in Markdown. You can learn more about Markdown from your README that GitHub filled out for you in the last post. Markdown is also used to include a picture in the document via `![New repo](path/to/file.pic)`, however we've also used a Liquid object in `{{}}`...
