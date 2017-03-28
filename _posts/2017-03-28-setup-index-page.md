@@ -13,7 +13,7 @@ I won't show you how to do this.
 
 Write your YAML exactly like below. Well, you can use a different title if you want.
 
-```
+```yaml
 ---
 layout: post
 title: Write a post
