@@ -52,7 +52,7 @@ Say I wanted to make headers at level 1 purple, I would use normal `.css` after 
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "{% raw  %}{{ site.theme }}{% endraw %}";
 
 h1 {
   color: purple;
@@ -89,6 +89,17 @@ Find your original layout for the theme.
 
 Paste your copy into the file you just created
 
+### Find the `{{ "{{ content " }}}}` liquid object
+
+It's important to find this part in the `.html`
+
+```
+<section class="main-content">
+  {{ content }}
+```
+
+This section is the part that sources your parsed Markdown material and then places it in the `.html`. __This is really important. If you don't have it you're going to have a bad time.__
+
 ### Duplicate the copy
 
 Take a copy and rename as `posts.html`
@@ -108,6 +119,7 @@ I want to change my header on my posts page to display the post title and date i
         <a href="{% raw  %}{{ site.github.repository_url }}{% endraw %}" class="btn">View on GitHub</a>
       {% raw  %}{% endif %}{% endraw %}
 ```
+![DevTools]({{ site.github.url }}/assets/apply-theme-to-posts/6_post_head_before.PNG)
 
 #### After
 
@@ -117,5 +129,4 @@ I want to change my header on my posts page to display the post title and date i
     <h1 class="project-name">{% raw  %}{{ page.title }}{% endraw %}</h1>
     <h2 class="project-tagline">{% raw  %}{{ page.date | date_to_string }}{% endraw %}</h2>
 ```
-
-#### Find the `{{ "{{ content " }}}}` liquid object
+![DevTools]({{ site.github.url }}/assets/apply-theme-to-posts/7_post_head_after.PNG)
