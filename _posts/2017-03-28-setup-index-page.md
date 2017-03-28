@@ -28,7 +28,7 @@ Remember we're in an `.html` file? We've written some tags here, for unordered l
 * Liquid objects `{{ "{{ this " }}}}` - resolve into text
 * Liquid tags `{{ "{% this " }}%}` - apply logic to the template
 
-So here we are using objects to reference parts of the site, pulling at various points page titles, posts on the site, dates and titles of posts. We actually iterate some logic for these objects with the tags to return a list with these details. 
+So here we are using objects to reference parts of the site, pulling at various points page titles, posts on the site, dates and titles of posts. We actually iterate some logic for these objects with the tags to return a list with these details.
 
 ## Commit and sync your changes
 
@@ -40,7 +40,7 @@ Go back to your page URL (psst! remember it's in the repo settings).
 
 ![Index page]({{ site.github.url }}/assets/setup-index-page/3_index_page.PNG)
 
-Your posts are now indexed! Anything else surprise you? A few things have happened here.
+We've found the missing posts! Anything else surprise you? A few things have happened here.
 
 > Jekyll has picked your new file as the home page.
 
@@ -49,3 +49,9 @@ This is because you called it `index.html`, Jekyll will default to display index
 > Jekyll has applied the old formatting for headers and footers
 
 Look back at the `README.md`. That didn't _actually_ have any code to do any of the fancy formatting for the theme at all.
+
+## Open a post
+
+Now open up one of those lost posts.
+
+![Open post]({{ site.github.url }}/assets/setup-index-page/4_open_post.PNG)
