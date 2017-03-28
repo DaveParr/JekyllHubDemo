@@ -62,7 +62,12 @@ Behind the scenes Jekyll is looking for names with this structure when the repo 
 
 Duplicate the following identically (or at least similarly) at the start of your file. __This is also also really important. If you don't you're going to have a bad time.__
 
-![Include YAML frontmatter]({{ site.github.url }}/assets/write-jekyll-post/8_include_YAML_frontmatter.PNG)
+```yaml
+---
+layout: post
+title: Write a post
+---
+```
 
 Behind the scenes Jekyll is looking for this at the start of the files when the repo is hosted on the website. It will use this to associate metadata to the file. This is a minimal example, but they can be much more developed.
 
@@ -70,7 +75,13 @@ Behind the scenes Jekyll is looking for this at the start of the files when the 
 
 Markdown is a really convenient way to encode formatting into text files. It doesn't break the flow of the text file when it is being read raw, and is much easier to learn and type without errors than html. Liquid is a templating language which is used to provide logic and variables to a page which is rendered through Jekyll. You don't _need_ to use the nested structure here to locate files, I just find it helps.
 
-![Write some Markdown and Liquid objects]({{ site.github.url }}/assets/write-jekyll-post/9_write_some_markdown_and_liquid_objects.PNG)
+```markdown
+## Start new repo
+
+Before you can start a  GitHub Page site, you need a GitHub repository! A quick way to start one is by going to github, signing in, and clicking the `+` button.
+
+![Start new repo]({{ site.github.url }}/assets/setup-github-pages/1_new_repo.PNG)
+```
 
 ### Markdown
 In this example the `##` denotes a second level header in Markdown. You can learn more about Markdown from your README that GitHub filled out for you in the last post. Markdown is also used to include a picture in the document via `![New repo](path/to/file.pic)`, however we've also used a Liquid object in `{{}}`...

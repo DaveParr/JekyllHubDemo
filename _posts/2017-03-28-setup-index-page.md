@@ -26,7 +26,17 @@ Notice we're doing something different here. We are using an `.html` file not a 
 
 Write exactly the code below:
 
-![Liquid indexing]({{ site.github.url }}/assets/setup-index-page/2_liquid_indexing.PNG)
+```html
+<h1>{{ page.title }}</h1>
+	<ul class="posts">
+	  {% for post in site.posts %}
+	    <li>
+        <span>{{ post.date | date_to_string }}</span> »
+        <a class="PostsLink" href="{{ post.url | prepend: site.github.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+	  {% endfor %}
+	</ul>
+```
 
 Remember we're in an `.html` file? We've written some tags here, for unordered list and list items. We've also got lots of liquid outputs in `{{ "{{ this " }}}}` and even liquid tags `{{ "{% this " }}%}`. The difference is important.
 
