@@ -61,7 +61,7 @@ h1 {
 
 #### Before
 
-![DevTools]({{ site.github.url }}/assets/apply-theme-to-posts/3_index_page.PNG)
+![DevTools]({{ site.github.url }}/assets/setup-github-page/3_index_page.PNG)
 
 #### After
 
