@@ -88,10 +88,8 @@ In my example I've already made a few changes. I've also made a new branch calle
 
 ## Find your page
 
-After syncing changes, GitHub Pages will notice that you have a folder called `_posts`. It will look through the folder for `.md` files with a name following the structure `YYYY-MM-DD-my-post-title`, and will check the `YAML` at the front. If it finds all these in place it will then parse the Markdown and Liquid into HTML, and publish these to the internet. Where can you find it?
+After syncing changes, GitHub Pages will notice that you have a folder called `_posts`. It will look through the folder for `.md` files with a name following the structure `YYYY-MM-DD-my-post-title`, and will check the `YAML` at the front. If it finds all these in place it will then parse the Markdown and Liquid into HTML, and publish these to the internet.
 
-Well, right now I can find mine at https://davergp.github.io/JekyllHubDemo/2017/03/26/setup-github-pages.html. The structure is "https://githubusername.io/RepoName/YYYY/MM/DD/my/post/title". Don't get too excited though...
+It really will.
 
-![Commit your changes]({{ site.github.url }}/assets/write-jekyll-post/11_find_page.PNG)
-
-A bit disappointing. None of our neat github theme materials have been applied. All the material is there though we've got a couple more jobs to do.
+It just won't tell you where they are. Yet...
