@@ -13,7 +13,12 @@ I won't show you how to do this.
 
 Write your YAML exactly like below. Well, you can use a different title if you want.
 
-![Setup your frontmatter]({{ site.github.url }}/assets/setup-index-page/1_setup_frontmatter.PNG)
+```
+---
+layout: post
+title: Write a post
+---
+```
 
 Notice we're doing something different here. We are using an `.html` file not a `.md` file. We're also using a different layout argument, `default`, not `post` as in the other pages.
 
