@@ -91,7 +91,7 @@ Find your original layout for the theme.
 
 Paste your copy into the file you just created
 
-### Find the `{{ "{{ content " }}}}` liquid object
+### Find the `{% raw %}{{ content }}{% endraw %}` liquid object
 
 It's important to find this part in the `.html`
 
