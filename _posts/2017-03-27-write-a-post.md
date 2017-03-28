@@ -40,7 +40,7 @@ Use the right click to open the `New Folder` dialogue in Atom.
 
 Name the new folder `_posts`. __This is really important. If you don't you're going to have a bad time.__
 
-![Name posts]({{ site.github.url }}/assets/write-jekyll-post/5.PNG)
+![Name posts]({{ site.github.url }}/assets/write-jekyll-post/5_name_folder.PNG)
 
 Behind the scenes Jekyll is looking for this folder when the repo is hosted on the website. It will use the Markdown files in this folder to build the individual blog posts.
 
