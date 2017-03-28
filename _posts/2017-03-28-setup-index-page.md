@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Setup index page
 ---
 
