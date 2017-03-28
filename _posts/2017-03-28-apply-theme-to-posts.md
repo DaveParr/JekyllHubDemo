@@ -61,7 +61,7 @@ h1 {
 
 #### Before
 
-![DevTools]({{ site.github.url }}/assets/setup-github-page/3_index_page.PNG)
+![DevTools]({{ site.github.url }}/assets/setup-index-page/3_index_page.PNG)
 
 #### After
 
@@ -111,9 +111,11 @@ I want to change my header on my posts page to display the post title and date i
 
 #### After
 
+```
 <body>
   <section class="page-header">
     <h1 class="project-name">{% raw  %}{{ page.title }}{% endraw %}</h1>
     <h2 class="project-tagline">{% raw  %}{{ page.date | date_to_string }}{% endraw %}</h2>
+```
 
 #### Find the `{{ "{{ content " }}}}` liquid object
