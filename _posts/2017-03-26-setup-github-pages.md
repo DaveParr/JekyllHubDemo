@@ -51,3 +51,5 @@ Wondering how to deploy your page now? Don't bother, GitHub has done it already!
 Grats, you have a pretty new page! Use these nicely formatted links to learn about Markdown, Jekyll and your repo Settings tab.
 
 ![Read your README]({{ site.github.url }}/assets/setup-github-pages/7_read_your_README.PNG)
+
+Hmmm, a bit of a let down. All that nice formatting on the home page isn't reaching your posts. Not done yet!
