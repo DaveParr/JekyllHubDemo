@@ -84,7 +84,7 @@ Before you can start a  GitHub Page site, you need a GitHub repository! A quick 
 ```
 
 ### Markdown
-In this example the `##` denotes a second level header in Markdown. You can learn more about Markdown from your README that GitHub filled out for you in the last post. Markdown is also used to include a picture in the document via `![New repo](path/to/file.pic)`, however we've also used a Liquid object in `{{}}`...
+In this example the `##` denotes a second level header in Markdown. You can learn more about Markdown from your README that GitHub filled out for you in the last post. Markdown is also used to include a picture in the document via `![New repo](path/to/file.pic)`, however we've also used a Liquid object in `{{ "{{ this " }}}}`...
 
 ### Liquid
 When the site is built Jekyll will replace this argument `site.github.url` with the actual url of your site hosted by GitHub. Remember the last part of the last post? That url that GitHub assigned you which is recorded in your repo settings. You should get used to using Liquid, and you should always use {{ site.github.url }} when making pages to host on GitHub Pages. __This is also also also really important. If you don't you're going to have a bad time.__
