@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup  GitHub Page
+title: Write a post
 ---
 
 This post will show you how to write a markdown post for Jekyll on GitHub Pages. You will need:
@@ -94,4 +94,4 @@ Well, right now I can find mine at https://davergp.github.io/JekyllHubDemo/2017/
 
 ![Commit your changes]({{ site.github.url }}/assets/write-jekyll-post/11_find_page.PNG)
 
-A bit disappointing. None of our neat github theme materials have been applied. All the material is there though we've got a couple more jobs to do. 
+A bit disappointing. None of our neat github theme materials have been applied. All the material is there though we've got a couple more jobs to do.
