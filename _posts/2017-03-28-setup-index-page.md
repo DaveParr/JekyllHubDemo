@@ -23,10 +23,10 @@ Write exactly the code below:
 
 ![Liquid indexing]({{ site.github.url }}/assets/setup-index-page/2_liquid_indexing.PNG)
 
-Remember we're in an `.html` file? We've written some tags here, for unordered list and list items. We've also got lots of liquid outputs in `{{ }}` and even liquid tags `{% %}`. The difference is important.
+Remember we're in an `.html` file? We've written some tags here, for unordered list and list items. We've also got lots of liquid outputs in `{{ "{{ this " }}}}` and even liquid tags `{{ "{% this " }}%}`. The difference is important.
 
-* Liquid objects `{{}}` - resolve into text
-* Liquid tags `{ % %}` - apply logic to the template
+* Liquid objects `{{ "{{ this " }}}}` - resolve into text
+* Liquid tags `{{ "{% this " }}%}` - apply logic to the template
 
 ## Commit and sync your changes
 
