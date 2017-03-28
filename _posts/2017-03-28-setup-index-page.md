@@ -28,6 +28,8 @@ Remember we're in an `.html` file? We've written some tags here, for unordered l
 * Liquid objects `{{ "{{ this " }}}}` - resolve into text
 * Liquid tags `{{ "{% this " }}%}` - apply logic to the template
 
+So here we are using objects to reference parts of the site, pulling at various points page titles, posts on the site, dates and titles of posts. We actually iterate some logic for these objects with the tags to return a list with these details. 
+
 ## Commit and sync your changes
 
 You're on your own here too
