@@ -27,12 +27,12 @@ Notice we're doing something different here. We are using an `.html` file not a 
 Write exactly the code below:
 
 ```html
-<h1>{{ page.title }}</h1>
+<h1>{{ "{{ page.title " }}}}</h1>
 	<ul class="posts">
 	  {{ "{% for post in site.posts " }}%}
 	    <li>
-        <span>{{ post.date | date_to_string }}</span> »
-        <a class="PostsLink" href="{{ post.url | prepend: site.github.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <span>{{ "{{ post.date | date_to_string " }}}}</span> »
+        <a class="PostsLink" href="{{ "{{ post.url | prepend: site.github.url " }}}}" title="{{ "{{ post.title " }}}}">{{ "{{ post.title " }}}}</a>
       </li>
 	  {{ "{% endfor " }}%}
 	</ul>
