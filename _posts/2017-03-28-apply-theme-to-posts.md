@@ -15,7 +15,7 @@ GitHub Pages wrote it for you and hid it in folders you don't see in your repo. 
 
 ### The quick fix
 
-If you've been paying attention you'll spot that you can simply go through all your posts and rep[lace `layout: post` with `layout: default`. However, there's a more sophisticated option...
+If you've been paying attention you'll spot that you can simply go through all your posts and replace `layout: post` with `layout: default`. However, there's a more sophisticated option...
 
 ### The GitHub Pages Organization
 
@@ -42,7 +42,7 @@ Add the following at the top of the file
 @import "{{ "{{ site.theme " }}}}
 ```
 
-There is a 'yaml' fence there, but it's empty. After that there is an import rule and a liquid tag.
+There is a `yaml` fence there, but it's empty. After that there is an import rule and a liquid tag.
 
 ### Modify the css
 
@@ -69,7 +69,7 @@ h1 {
 
 ## Modify the layout
 
-What if you want to do something more complex, for example creating a different design for the posts compared to the rest of the site? Remember our friend `_layouts`?
+What if you want to do something more complex, for example creating a different design for the posts compared to the rest of the site? Remember our friend `_posts`?
 
 ### Create a layouts file
 
@@ -78,6 +78,8 @@ Create folders and a file at
 ```
 /_layouts/default.html
 ```
+
+This will be a central place for Jekyll to check our different layouts. __This is really important. If you don't have it you're going to have a bad time.__
 
 ### Copy the original
 
@@ -95,10 +97,10 @@ It's important to find this part in the `.html`
 
 ```
 <section class="main-content">
-  {{ content }}
+  {% raw %}{{ content }}{% endraw %}
 ```
 
-This section is the part that sources your parsed Markdown material and then places it in the `.html`. __This is really important. If you don't have it you're going to have a bad time.__
+This section is the part that sources your parsed Markdown material and then places it in the `.html`. __This is really important. If you don't have it you're also going to have a bad time.__
 
 ### Duplicate the copy
 

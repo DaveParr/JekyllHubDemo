@@ -5,7 +5,7 @@ title: Setup index page
 
 This post will show you how to write a an index of blog posts for Jekyll on GitHub Pages.
 
-## Make a new folder named blog and a new file named index.html
+## Make a new file named index.html in the root directory
 
 I won't show you how to do this.
 
@@ -15,8 +15,8 @@ Write your YAML exactly like below. Well, you can use a different title if you w
 
 ```yaml
 ---
-layout: post
-title: Write a post
+layout: default
+title: Dave's Blog
 ---
 ```
 
