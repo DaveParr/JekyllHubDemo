@@ -55,3 +55,5 @@ Look back at the `README.md`. That didn't _actually_ have any code to do any of 
 Now open up one of those lost posts.
 
 ![Open post]({{ site.github.url }}/assets/setup-index-page/4_open_post.PNG)
+
+Hmmm, a bit of a let down. All that nice formatting on the home page isn't reaching your posts. Not done yet!
