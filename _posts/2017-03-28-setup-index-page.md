@@ -5,7 +5,7 @@ title: Setup index page
 
 This post will show you how to write a an index of blog posts for Jekyll on GitHub Pages.
 
-## Make a new folder named blog and a new file named index.html
+## Make a new file named index.html in the root directory
 
 I won't show you how to do this.
 
@@ -13,7 +13,12 @@ I won't show you how to do this.
 
 Write your YAML exactly like below. Well, you can use a different title if you want.
 
-![Setup your frontmatter]({{ site.github.url }}/assets/setup-index-page/1_setup_frontmatter.PNG)
+```yaml
+---
+layout: default
+title: Dave's Blog
+---
+```
 
 Notice we're doing something different here. We are using an `.html` file not a `.md` file. We're also using a different layout argument, `default`, not `post` as in the other pages.
 
@@ -21,7 +26,17 @@ Notice we're doing something different here. We are using an `.html` file not a 
 
 Write exactly the code below:
 
-![Liquid indexing]({{ site.github.url }}/assets/setup-index-page/2_liquid_indexing.PNG)
+```html
+<h1>{{ "{{ page.title " }}}}</h1>
+	<ul class="posts">
+	  {{ "{% for post in site.posts " }}%}
+	    <li>
+        <span>{{ "{{ post.date | date_to_string " }}}}</span> »
+        <a class="PostsLink" href="{{ "{{ post.url | prepend: site.github.url " }}}}" title="{{ "{{ post.title " }}}}">{{ "{{ post.title " }}}}</a>
+      </li>
+	  {{ "{% endfor " }}%}
+	</ul>
+```
 
 Remember we're in an `.html` file? We've written some tags here, for unordered list and list items. We've also got lots of liquid outputs in `{{ "{{ this " }}}}` and even liquid tags `{{ "{% this " }}%}`. The difference is important.
 
