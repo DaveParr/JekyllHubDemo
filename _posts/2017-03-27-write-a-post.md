@@ -96,7 +96,7 @@ Save your file and head back to GitHub Desktop. Commit your changes and then `sy
 
 ![Commit your changes]({{ site.github.url }}/assets/write-jekyll-post/10_commit_changes.PNG)
 
-In my example I've already made a few changes. I've also made a new branch called gh-pages to test out my changes before commiting to the main branch. You can the change branch the site is built from in the settings page of the repo, however the branch has to be called either `master` or `gh-pages`. __This is also also also also really important. If you don't you're going to have a bad time.__
+In my example I've already made a few changes. I've also made a new branch called gh-pages to test out my changes before commiting to the main branch. You can change the branch the site is built from in the settings page of the repo, however the branch has to be called either `master` or `gh-pages`. __This is also also also also really important. If you don't you're going to have a bad time.__
 
 ## Find your post
 
